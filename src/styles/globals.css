@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes scroll1 {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: calc(-1px * (150 * 15 + 40 * 15));
+  }
+}
+
+.animate1 {
+  animation: scroll1 15s linear infinite;
+}
+@keyframes scroll2 {
+  0% {
+    right: calc(-1px * (150 * 11 + 40 * 10));
+  }
+  100% {
+    right: calc(-1px * (150 * 15 + 40 * 15 + 150 * 11 + 40 * 10));
+  }
+}
+
+.animate2 {
+  animation: scroll2 15s linear infinite;
+}
